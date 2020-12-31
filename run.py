@@ -1,3 +1,4 @@
+import json
 import requests
 from bs4 import BeautifulSoup
 session = requests.Session()
@@ -53,8 +54,8 @@ def run():
         urls = get_urls(page)
         total_urls += urls  # total urls = total url + urls
 
-    print(total_urls)
-    print(len(total_urls))
+    with open('all_urls.json', 'w') as outfile:
+        json.dump(total_pages, outfile)
 
     get_detail()
     create_csv()

@@ -21,8 +21,7 @@ def login():
 
 
 def get_urls(page):
-    print('getting urls.....')
-
+    print('getting urls..... page {}', format(page))
     params = {
         'page': page
     }
@@ -46,12 +45,17 @@ def get_detail():
 def create_csv():
     print('csv generated... ')
 
-def run() -> object:
+def run():
     total_pages = login()
+    total_urls = []
     for i in range(total_pages):
         page = i + 1
-        print(page)
-    # get_urls()
+        urls = get_urls(page)
+        total_urls += urls  # total urls = total url + urls
+
+    print(total_urls)
+    print(len(total_urls))
+
     get_detail()
     create_csv()
 

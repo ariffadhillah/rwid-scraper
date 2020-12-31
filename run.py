@@ -37,8 +37,14 @@ def get_urls():
 
 
     titles = soup.find_all('h4', attrs={'class': 'card-title'})
+
+    # menggunakna metode pengabungan url (urls = [], urls.append(url)
+    urls = []
+
     for title in titles:
         url = title.find('a')['href']
+        urls.append(url)
+
         print(url)
 
     # f = open('./res.html', 'w+')

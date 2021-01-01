@@ -41,11 +41,12 @@ def get_urls(page):
     return urls
 
 def get_detail(url):
-    print('getting detail... ')
+    print('getting detail... {} '.format(url))
     res = session.get('http://127.0.0.1:5000'+url)
-    f = open('./res.html ', 'w+')
-    f.write(res.text)
-    f.close()
+
+    # f = open('./res.html ', 'w+')
+    # f.write(res.text)
+    # f.close()
 
     soup = BeautifulSoup(res.text, 'html5lib')
     title = soup.find('title').text.strip()
@@ -68,6 +69,8 @@ def get_detail(url):
 def create_csv():
     print('csv generated... ')
 
+
+
 def run():
     total_pages = login()
 
@@ -82,9 +85,9 @@ def run():
 
     with open('all_urls.json') as json_file:
         all_url = json.load(json_file)
-        get_detail('/takoyakids-everyday-darling-rabbit-sets-girl-yellow')
-    # for url in all_url:
-    #     get_detail(url)
+
+    for url in all_url:
+        get_detail(url)
 
     create_csv()
 

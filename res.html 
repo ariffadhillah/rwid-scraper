@@ -128,7 +128,7 @@
         
 
         Time
-        <br /><small>CPU: 7.64ms (8.71ms)</small>
+        <br /><small>CPU: 7.34ms (8.53ms)</small>
 
         
         </a>
@@ -547,22 +547,22 @@
     
       <tr class="flDebugOdd">
         <td>User CPU time</td>
-        <td>7.636 msec</td>
+        <td>7.330 msec</td>
       </tr>
     
       <tr class="flDebugEven">
         <td>System CPU time</td>
-        <td>0.000 msec</td>
+        <td>0.011 msec</td>
       </tr>
     
       <tr class="flDebugOdd">
         <td>Total CPU time</td>
-        <td>7.636 msec</td>
+        <td>7.341 msec</td>
       </tr>
     
       <tr class="flDebugEven">
         <td>Elapsed time</td>
-        <td>8.707 msec</td>
+        <td>8.532 msec</td>
       </tr>
     
       <tr class="flDebugOdd">
@@ -721,7 +721,7 @@
     
     <tr class="flDebugOdd">
       <td>&#39;session&#39;</td>
-      <td>&#39;.eJwtzj0OwjAMQOG7eO7gOIl_epnKiR3B2tIJcXcY2N7ySe8NxzrzesD-Ou_c4HgG7EAcjmK9BFdTygxXakkqFOLKoi1YUUl8LrFZJFG8DjEy-kkdc0StYh45Ky1p2X_FWLnzKogzVAa2Puoc6dN7MS6d2S0VrcAG95XnfwY-X1kMLmc.X-9bfQ.avMoWVL7NDb4OVJKEuYRyXaLKy0&#39;</td>
+      <td>&#39;.eJwtzj0OwjAMQOG7eO7gOIl_epnKiR3B2tIJcXcY2N7ySe8NxzrzesD-Ou_c4HgG7EAcjmK9BFdTygxXakkqFOLKoi1YUUl8LrFZJFG8DjEy-kkdc0StYh45Ky1p2X_FWLnzKogzVAa2Puoc6dN7MS6d2S0VrcAG95XnfwY-X1kMLmc.X-9eJA.qe2Bv0WpA7xDOxmN5D0JDwqdi8E&#39;</td>
     </tr>
     
   </tbody>
@@ -1126,11 +1126,11 @@
   <tbody>
     
       <tr class="flDebugOdd">
-        <td>1.0307</td>
+        <td>1.3387</td>
         <td>
         
-          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_select?query=.eJyLVgp29XF1DlEoLU4tKtbLTFFwDIaw4zNTdKCiIDIvMTcVIQcTgakoSCwuLs8vQtINE4GpKMrPQdIP4sFkEktLMlLzSjKTE0tSkQxAFY7Jcwvy94VIATnhHq5Brgg32yqoamSmxBtqguQUfDx9PUOAIgWJRYm5IEElnWolkLSSlZGOElRUycqwNhYAY8tYFQ.O6a6f1fTk4MSd3vpWJzO0UfFJMU&amp;duration=0.0010306835174560547">SELECT</a><br />
-          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_explain?query=.eJyLVgp29XF1DlEoLU4tKtbLTFFwDIaw4zNTdKCiIDIvMTcVIQcTgakoSCwuLs8vQtINE4GpKMrPQdIP4sFkEktLMlLzSjKTE0tSkQxAFY7Jcwvy94VIATnhHq5Brgg32yqoamSmxBtqguQUfDx9PUOAIgWJRYm5IEElnWolkLSSlZGOElRUycqwNhYAY8tYFQ.O6a6f1fTk4MSd3vpWJzO0UfFJMU&amp;duration=0.0010306835174560547">EXPLAIN</a><br />
+          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_select?query=.eJyLVgp29XF1DlEoLU4tKtbLTFFwDIaw4zNTdKCiIDIvMTcVIQcTgakoSCwuLs8vQtINE4GpKMrPQdIP4sFkEktLMlLzSjKTE0tSkQxAFY7Jcwvy94VIATnhHq5Brgg32yqoamSmxBtqguQUfDx9PUOAIgWJRYm5IEElnWolkLSSlZGOElRUycqwNhYAY8tYFQ.O6a6f1fTk4MSd3vpWJzO0UfFJMU&amp;duration=0.0013387203216552734">SELECT</a><br />
+          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_explain?query=.eJyLVgp29XF1DlEoLU4tKtbLTFFwDIaw4zNTdKCiIDIvMTcVIQcTgakoSCwuLs8vQtINE4GpKMrPQdIP4sFkEktLMlLzSjKTE0tSkQxAFY7Jcwvy94VIATnhHq5Brgg32yqoamSmxBtqguQUfDx9PUOAIgWJRYm5IEElnWolkLSSlZGOElRUycqwNhYAY8tYFQ.O6a6f1fTk4MSd3vpWJzO0UfFJMU&amp;duration=0.0013387203216552734">EXPLAIN</a><br />
         
         </td>
         <td title="/home/home/Documents/RWD/rwid-scraper-source/project/__init__.py:40 (load_user)">
@@ -1147,11 +1147,11 @@ WHERE users.id = %(id_1)s
       </tr>
     
       <tr class="flDebugEven">
-        <td>0.9117</td>
+        <td>0.8245</td>
         <td>
         
-          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_select?query=.eJxVjkGLwjAQRv9KCSwoNIJXwcMiXRQUQYU9uIuMSShDY1MmoxJk_7s1LDU5he-9R5ij2FfranEoOnL6qthPUBef-2GeUJdvx8jWZDqSpNDGK8KO0bVZl_Ck9uxUk3WRJMWVbOb7nVi8QJ3fE0lSdIQqLyJJCgVsakchiwb4037ttptB9Pt7We2q_MB58THq39N0_AqK9WqzOvSoA4LLC4ryIaIXM8HQuAANai_NzVDQEKQGstjWkuB8RpbesJc1kpXBWOvuohT_X4nZ9O_3CZ_anis.HQrpZGjMxCOR-2-o2t4GDDPSbjY&amp;duration=0.000911712646484375">SELECT</a><br />
-          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_explain?query=.eJxVjkGLwjAQRv9KCSwoNIJXwcMiXRQUQYU9uIuMSShDY1MmoxJk_7s1LDU5he-9R5ij2FfranEoOnL6qthPUBef-2GeUJdvx8jWZDqSpNDGK8KO0bVZl_Ck9uxUk3WRJMWVbOb7nVi8QJ3fE0lSdIQqLyJJCgVsakchiwb4037ttptB9Pt7We2q_MB58THq39N0_AqK9WqzOvSoA4LLC4ryIaIXM8HQuAANai_NzVDQEKQGstjWkuB8RpbesJc1kpXBWOvuohT_X4nZ9O_3CZ_anis.HQrpZGjMxCOR-2-o2t4GDDPSbjY&amp;duration=0.000911712646484375">EXPLAIN</a><br />
+          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_select?query=.eJxVjkGLwjAQRv9KCSwoNIJXwcMiXRQUQYU9uIuMSShDY1MmoxJk_7s1LDU5he-9R5ij2FfranEoOnL6qthPUBef-2GeUJdvx8jWZDqSpNDGK8KO0bVZl_Ck9uxUk3WRJMWVbOb7nVi8QJ3fE0lSdIQqLyJJCgVsakchiwb4037ttptB9Pt7We2q_MB58THq39N0_AqK9WqzOvSoA4LLC4ryIaIXM8HQuAANai_NzVDQEKQGstjWkuB8RpbesJc1kpXBWOvuohT_X4nZ9O_3CZ_anis.HQrpZGjMxCOR-2-o2t4GDDPSbjY&amp;duration=0.0008244514465332031">SELECT</a><br />
+          <a class="remoteCall" href="/_debug_toolbar/views/sqlalchemy/sql_explain?query=.eJxVjkGLwjAQRv9KCSwoNIJXwcMiXRQUQYU9uIuMSShDY1MmoxJk_7s1LDU5he-9R5ij2FfranEoOnL6qthPUBef-2GeUJdvx8jWZDqSpNDGK8KO0bVZl_Ck9uxUk3WRJMWVbOb7nVi8QJ3fE0lSdIQqLyJJCgVsakchiwb4037ttptB9Pt7We2q_MB58THq39N0_AqK9WqzOvSoA4LLC4ryIaIXM8HQuAANai_NzVDQEKQGstjWkuB8RpbesJc1kpXBWOvuohT_X4nZ9O_3CZ_anis.HQrpZGjMxCOR-2-o2t4GDDPSbjY&amp;duration=0.0008244514465332031">EXPLAIN</a><br />
         
         </td>
         <td title="/home/home/Documents/RWD/rwid-scraper-source/project/home/views.py:31 (detail)">

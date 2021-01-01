@@ -55,11 +55,13 @@ def run():
         total_urls += urls  # total urls = total url + urls
 
     with open('all_urls.json', 'w') as outfile:
-        json.dump(total_pages, outfile)
+        json.dump(total_urls, outfile)
 
     get_detail()
     create_csv()
 
 if __name__ == '__main__':
     run()
+
+
 

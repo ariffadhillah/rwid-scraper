@@ -1,6 +1,10 @@
+import glob
 import json
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
+
+
 session = requests.Session()
 
 def login():
@@ -67,6 +71,16 @@ def get_detail(url):
         json.dump(dict_data, outfile)
 
 def create_csv():
+    files = sorted(glob.glob('./results/*.json'))
+    datas = []
+    for file in files:
+        with open(file) as json_file:
+            data = json.load(json_file)
+            datas.append(data)
+
+    df = pd.DataFrame(datas)
+    df.to_csv('results.csv', index=False)
+
     print('csv generated... ')
 
 
@@ -74,20 +88,22 @@ def create_csv():
 def run():
     total_pages = login()
 
-    # total_urls = []
-    # for i in range(total_pages):
-    #     page = i + 1
-    #     urls = get_urls(page)
-    #     total_urls += urls  # total urls = total url + urls
-    #
-    # with open('all_urls.json', 'w') as outfile:
-    #     json.dump(total_urls, outfile)
+    total_urls = []
+    for i in range(total_pages):
+        page = i + 1
+        urls = get_urls(page)
+        total_urls += urls  # total urls = total url + urls
 
+    with open('all_urls.json', 'w') as outfile:
+        json.dump(total_urls, outfile)
+
+    # untuk mendapatkan semua result/(url) dan menyimpannya kedalam format json
     with open('all_urls.json') as json_file:
         all_url = json.load(json_file)
 
     for url in all_url:
         get_detail(url)
+    # end
 
     create_csv()
 
